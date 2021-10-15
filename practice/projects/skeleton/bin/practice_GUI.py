@@ -29,6 +29,12 @@ while is_running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             is_running = False
+
+        if event.type == pygame.USEREVENT:
+            if event.user_type == pygame_gui.UI_BUTTON_PRESSED:
+                if event.ui_element == hello_button:
+                    print("I love you!")
+
         manager.process_events(event)
     
     manager.update(time_delta)
