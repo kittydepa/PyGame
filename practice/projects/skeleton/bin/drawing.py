@@ -11,7 +11,7 @@ pygame.init()
 DISPLAYSURF = pygame.display.set_mode((500, 400), 0, 32)
 pygame.display.set_caption('Primitive Drawing Practice')
 
-# set up the colors
+# set up the colors, because this will make the source code easier to read
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 RED = (255, 0, 0)
