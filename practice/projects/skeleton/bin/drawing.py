@@ -29,13 +29,13 @@ pygame.draw.circle(DISPLAYSURF, BLUE, (300, 50), 20, 0)
 pygame.draw.ellipse(DISPLAYSURF, RED, (300, 250, 40, 80), 1)
 pygame.draw.rect(DISPLAYSURF, RED, (200, 150, 100, 50))
 
-pixObj = pygame.PixelArray(DISPLAYSURF)
+pixObj = pygame.PixelArray(DISPLAYSURF) # Creating a PixelArray object lets you draw individal pixels, and state which colour you want them to be
 pixObj[480][380] = BLACK
 pixObj[482][382] = BLACK
 pixObj[484][384] = BLACK
 pixObj[486][386] = BLACK
 pixObj[488][388] = BLACK
-del pixObj
+del pixObj # When you are done, you need to have the del statement, otherwise next time you try to blit/draw, you will get an error saying 'Surfaces' much be unlocked during blit
 
 # run the game loop
 while True:
