@@ -44,4 +44,4 @@ while True:
             sys.exit()
     
     pygame.display.update()
-    fpsClock.tick(FPS)
+    fpsClock.tick(FPS) # the tick method helps to ensure the program does not run too fast, and should be called at the very end of the game loop
