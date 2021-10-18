@@ -22,11 +22,11 @@ while True:
     if direction == 'right':
         catx += 5
         if catx == 280:
-            direction == 'down'
+            direction = 'down'
     elif direction == 'down':
         caty += 5
         if caty == 220:
-            direction == 'left'
+            direction = 'left'
     elif direction == 'left':
         catx -= 5
         if catx == 10:
