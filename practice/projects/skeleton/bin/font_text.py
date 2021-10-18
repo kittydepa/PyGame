@@ -9,7 +9,7 @@ WHITE = (255, 255, 255)
 GREEN = (0, 255, 0)
 BLUE = (0, 0, 128)
 
-fontObj = pygame.font.Font('consolas.ttf', 32)
+fontObj = pygame.font.Font('freesansbold.ttf', 32)
 textSurfaceObj = fontObj.render('Hello Kitty!', True, GREEN, BLUE)
 textRectObj = textSurfaceObj.get_rect()
 textRectObj.center = (200, 150)
