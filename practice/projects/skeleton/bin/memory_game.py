@@ -41,6 +41,7 @@ LIGHTBGCOLOR = GRAY
 BOXCOLOR = WHITE
 HIGHLIGHTCOLOR = BLUE
 
+# In this case, it is better to use constant variables than strings. E.g., it can help detect typos later on
 DONUT = 'donut'
 SQUARE = 'square'
 DIAMOND = 'diamond'
@@ -50,3 +51,4 @@ OVAL = 'oval'
 ALLCOLORS = (RED, GREEN, BLUE, YELLOW, ORANGE, PURPLE, CYAN)
 ALLSHAPES = (DONUT, SQUARE, DIAMOND, LINES, OVAL)
 assert len(ALLCOLORS) * len(ALLSHAPES) * 2 >= BOARDWIDTH * BOARDHEIGHT, "Board is too big for the number of shapes/colors defined."
+
