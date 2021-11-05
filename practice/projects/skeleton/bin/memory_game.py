@@ -52,3 +52,13 @@ ALLCOLORS = (RED, GREEN, BLUE, YELLOW, ORANGE, PURPLE, CYAN)
 ALLSHAPES = (DONUT, SQUARE, DIAMOND, LINES, OVAL)
 assert len(ALLCOLORS) * len(ALLSHAPES) * 2 >= BOARDWIDTH * BOARDHEIGHT, "Board is too big for the number of shapes/colors defined."
 
+
+def main():
+    global FPSCLOCK, DISPLAYSURF
+    pygame.init()
+    FPSCLOCK = pygame.time.Clock()
+    DISPLAYSURF = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT))
+    
+    mousex = 0 # this is used to store x coordinate of mouse event
+    mousey = 0 # this is used to store y coordinate of mouse event
+    pygame.display.set_caption("Kitty's Memory Game")
